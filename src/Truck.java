@@ -1,8 +1,15 @@
-public class Truck {
-    public String modelName;
-    public int wheelsCount;
+public class Truck extends Vehicle{
+    private String modelName;
+    private int wheelsCount;
 
-    public Truck(String modelName, int wheelsCount) {
+    public Truck(String modelName, int wheelsCount, String modelName1, int wheelsCount1) {
+        super(modelName, wheelsCount);
+        this.modelName = modelName1;
+        this.wheelsCount = wheelsCount1;
+    }
+
+    public Truck (String modelName, int wheelsCount) {
+        super();
         this.modelName = modelName;
         this.wheelsCount = wheelsCount;
     }
