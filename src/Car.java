@@ -1,10 +1,9 @@
-public class Car {
+public class Car extends Vehicle{
     private String modelName;
     private int wheelsCount;
 
     public Car(String modelName, int wheelsCount) {
-        this.modelName = modelName;
-        this.wheelsCount = wheelsCount;
+        super(modelName, wheelsCount);
     }
 
     public String getModelName() {
@@ -23,11 +22,11 @@ public class Car {
         this.wheelsCount = wheelsCount;
     }
 
-    public void updateTyre() {
+   /* public void updateTyre() {
         System.out.println("Меняем покрышку");
     }
 
     public void checkEngine() {
         System.out.println("Проверяем двигатель");
-    }
+    }*/
 }

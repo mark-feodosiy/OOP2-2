@@ -2,17 +2,11 @@ public class Truck extends Vehicle{
     private String modelName;
     private int wheelsCount;
 
-    public Truck(String modelName, int wheelsCount, String modelName1, int wheelsCount1) {
+    public Truck(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
-        this.modelName = modelName1;
-        this.wheelsCount = wheelsCount1;
     }
 
-    public Truck (String modelName, int wheelsCount) {
-        super();
-        this.modelName = modelName;
-        this.wheelsCount = wheelsCount;
-    }
+
 
     public String getModelName() {
         return modelName;
@@ -30,7 +24,7 @@ public class Truck extends Vehicle{
         this.wheelsCount = wheelsCount;
     }
 
-    public void updateTyre() {
+    /* public void updateTyre() {
         System.out.println("Меняем покрышку");
     }
 
@@ -40,5 +34,5 @@ public class Truck extends Vehicle{
 
     public void checkTrailer() {
         System.out.println("Проверяем прицеп");
-    }
+    }*/
 }
