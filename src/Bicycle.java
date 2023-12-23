@@ -11,7 +11,6 @@ public class Bicycle implements Vehicle{
         if (bicycle != null) {
             for (int i = 0; i < bicycle.getWheelsCount(); i++) {
                System.out.println("Обслуживаем " + bicycle.getModelName());
-
                 bicycle.updateTyre();
             }
         }
