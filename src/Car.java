@@ -1,21 +1,27 @@
-public class Car implements Vehicle {
-    private String modelName;
-    private int wheelsCount;
+public class Car extends Bicycle {
 
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
+    public Car(String modelName, int wheelsCount) {
+        super(modelName, wheelsCount);
     }
 
     public void checkEngine() {
+       // for (int i = 0; i < getWheelsCount(); i++) {
+
         System.out.println("Проверяем двигатель");
     }
 
-    public Car(String modelName, int wheelsCount) {
-        this.modelName = modelName;
-        this.wheelsCount = wheelsCount;
+
+
+    @Override
+    public void service() {
+        updateTyre();
+        checkEngine();
     }
 
-    public void service() {
+
+
+
+   /* public void service() {
         Car car = new Car("car1", 4);
         if (car != null) {
             System.out.println("Обслуживаем " + car.getModelName());
@@ -23,7 +29,7 @@ public class Car implements Vehicle {
                 car.updateTyre();
             }
         }
-
+/*
 
     }
 
@@ -45,5 +51,5 @@ public class Car implements Vehicle {
 
     public void check() {
 
-    }
+    }*/
 }

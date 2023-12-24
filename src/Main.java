@@ -11,11 +11,11 @@ public class Main {
 
        // ServiceStation station = new ServiceStation();
         car.service();
-        car2.service();
+        System.out.println();
         truck.service();
-        truck2.service();
+        System.out.println();
         bicycle.service();
-        bicycle2.service();
+
 
     }
 
