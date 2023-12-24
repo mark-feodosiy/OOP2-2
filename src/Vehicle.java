@@ -1,4 +1,6 @@
-interface Vehicle {
+public interface Vehicle {
+
+   void service();
 
     public default void updateTyre() {
         System.out.println("Меняем покрышку");
