@@ -1,10 +1,36 @@
-public class Car {
-    public String modelName;
-    public int wheelsCount;
+public class Car extends Bicycle {
 
     public Car(String modelName, int wheelsCount) {
-        this.modelName = modelName;
-        this.wheelsCount = wheelsCount;
+        super(modelName, wheelsCount);
+    }
+
+    public void checkEngine() {
+       // for (int i = 0; i < getWheelsCount(); i++) {
+
+        System.out.println("Проверяем двигатель");
+    }
+
+
+
+    @Override
+    public void service() {
+        updateTyre();
+        checkEngine();
+    }
+
+
+
+
+   /* public void service() {
+        Car car = new Car("car1", 4);
+        if (car != null) {
+            System.out.println("Обслуживаем " + car.getModelName());
+            for (int i = 0; i < car.getWheelsCount(); i++) {
+                car.updateTyre();
+            }
+        }
+/*
+
     }
 
     public String getModelName() {
@@ -23,11 +49,7 @@ public class Car {
         this.wheelsCount = wheelsCount;
     }
 
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
-    }
+    public void check() {
 
-    public void checkEngine() {
-        System.out.println("Проверяем двигатель");
-    }
+    }*/
 }
